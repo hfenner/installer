@@ -75,6 +75,7 @@ module "iam" {
   tags = local.tags
 }
 
+/*
 module "dns" {
   source = "./route53"
 
@@ -90,6 +91,7 @@ module "dns" {
   region                   = var.aws_region
   publish_strategy         = var.aws_publish_strategy
 }
+*/
 
 module "vpc" {
   source = "./vpc"
